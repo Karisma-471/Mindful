@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primaryColor: #76a9fa;
+  --secondaryColor: #233876;
+  --txtColor: #7c8db0;
+  --whiteColor: #ffffff;
+  --headingOne: 64px;
+  --fontWeightBold: 700;
+  --primaryFontFamily: "Outfit", sans-serif;
+  --secondaryFontFamily: "Nunito Sans", sans-serif;
+}
+
+body {
+  font-family: var(--primaryFontFamily);
+}
+
+/* Container + Its Media Queries */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* nav */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+.logo {
+  width: 10%;
+}
+
+.nav-menu {
+  width: 40%;
+}
+
+.menu-list {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  font-size: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--txtColor);
+  font-family: var(--secondaryFontFamily);
+}
+
+.menu-btn {
+  padding: 12px 20px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  border-radius: 4px;
+}
+
+/* Hero Section Styling */
+#hero {
+  background-color: var(--primaryColor);
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-text {
+  width: 65%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-one {
+  font-size: var(--headingOne);
+  color: var(--secondaryColor);
+  font-weight: var(--fontWeightBold);
+  margin-bottom: 20px;
+}
+
+.body-text-big {
+  font-size: 24px;
+}
