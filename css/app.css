@@ -17,7 +17,8 @@
   --primaryColor: #76a9fa;
   --secondaryColor: #233876;
   --txtColor: #7c8db0;
-  --whiteColor: #ffffff;
+  --lightColor: #ffffff;
+  --darkColor: #000000;
   --headingOne: 64px;
   --fontWeightBold: 700;
   --primaryFontFamily: "Outfit", sans-serif;
@@ -97,7 +98,7 @@ body {
 .menu-btn {
   padding: 12px 20px;
   background-color: var(--primaryColor);
-  color: var(--whiteColor);
+  color: var(--lightColor);
   border-radius: 4px;
 }
 
@@ -126,4 +127,52 @@ body {
 
 .body-text-big {
   font-size: 24px;
+}
+
+#functions {
+  display: flex;
+  gap: 20px;
+  margin-top: 56px;
+}
+.left {
+  align-self: flex-start;
+}
+
+.left,
+.right {
+  width: 30%;
+}
+
+.mdidle {
+  width: 40%;
+}
+
+.mdidle,
+.right {
+  align-self: center;
+}
+
+.function-card {
+  padding: 27px 34px;
+  border-radius: 36px;
+  background-color: var(--secondaryColor);
+  border: 2px solid var(--darkColor);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.card-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.card-item .text {
+  font-size: 20px;
+  color: var(--lightColor);
+  font-weight: 400;
+  text-transform: capitalize;
 }
